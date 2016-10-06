@@ -1,0 +1,69 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500';
+
+@font-face {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    src: font-url('icomoon.eot', false, 'f5k529');
+    src: font-url('icomoon.eot', false, 'f5k529#iefix') format('embedded-opentype'),
+         font-url('icomoon.ttf', false, 'f5k529') format('truetype'),
+         font-url('icomoon.woff', false, 'f5k529') format('woff'),
+         font-url('icomoon.svg', false, 'f5k529#icomoon') format('svg');
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cross:before {
+  content: "\e117";
+}
+.icon-menu2:before {
+  content: "\e120";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-youtube:before {
+  content: "\ea9d";
+}
+.icon-vimeo:before {
+  content: "\eaa0";
+}
+
+
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-weight: 300;
+}

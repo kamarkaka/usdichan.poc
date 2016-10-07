@@ -1,3 +1,18 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+#app:
+#  resource: "@AppBundle/Controller/"
+#  type: annotation
+homepage:
+  path: /
+  defaults: { _controller: AppBundle:Default:index }
+
+lucky_number:
+  path: /lucky/number
+  defaults: { _controller: AppBundle:Lucky:number }
+
+lucky_numbers:
+  path: /lucky/numbers/{count}
+  defaults: { _controller: AppBundle:Lucky:numbers }
+
+api_lucky_number:
+  path: /api/lucky/number
+  defaults: { _controller: AppBundle:Lucky:apiNumber }

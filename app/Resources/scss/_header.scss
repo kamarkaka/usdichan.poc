@@ -1,0 +1,110 @@
+header {
+    background-color: rgba(255,255,255,0.5);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 1;
+
+    &.docked, &:hover {
+        background-color: #fff;
+    }
+
+    .nav-wrapper {
+        margin: auto;
+        max-width: 1280px;
+        width: 100%;
+    }
+
+    .title {
+        color: #858585;
+        float: left;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        width: 120px;
+    }
+
+    .desktop {
+        display: none;
+
+        &-menu {
+            float: right;
+            margin: 0;
+            padding: 0;
+
+            &-item {
+                display: block;
+                float: left;
+                line-height: 80px;
+                padding: 0 15px;
+
+                &-link {
+                    color: rgba(30,61,107,.55);
+
+                    &:hover {
+                        color: #1e3d6b;
+                    }
+                }
+            }
+        }
+    }
+
+    .mobile-icon {
+        color: rgba(30,61,107,.55);
+        float: right;
+        font-size: 24px;
+        line-height: 80px;
+        position: relative;
+        right: 0;
+        text-align: center;
+        transition: right 1s;
+        width: 80px;
+
+        &:hover {
+            color: #1e3d6b;
+        }
+
+        &.icon-cross {
+            right: 200px;
+        }
+    }
+
+    .mobile-menu {
+        background-color: #fff;
+        display: block;
+        margin: 0;
+        padding: 20px 20px;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        transition: right 1s;
+        width: 160px;
+
+        &.toggled {
+            right: 0;
+        }
+
+        &-item {
+            line-height: 40px;
+
+            &-link {
+                color: rgba(30,61,107,.55);
+
+                &:hover {
+                    color: #1e3d6b;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header .desktop {
+        display: block;
+    }
+    header .mobile {
+        display: none;
+    }
+}
